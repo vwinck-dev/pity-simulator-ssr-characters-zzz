@@ -37,7 +37,7 @@ You need Python 3 installed.
 
 ```bash
 # Clone this repo
-git clone https://github.com/vwinck-dev/pity-simulator-zzz.git
+git clone https://github.com/vwinck-dev/pity-simulator-ssr-characters-zzz.git
 cd pity-simulator-zzz
 
 # Run the simulation

@@ -1,6 +1,6 @@
 import random
 
-def simulate_zzz_pulls(simulations, copies_goal, base_rate, soft_pity_start, hard_pity):
+def simulate_zzz_pulls(simulations, copies_goal, base_rate, base_rate_a, soft_pity_start, hard_pity):
     total_pulls_list = []
     total_a_units = []
     total_banner_a = []
@@ -25,7 +25,7 @@ def simulate_zzz_pulls(simulations, copies_goal, base_rate, soft_pity_start, har
             a_pull_counter += 1
 
             # --- Handle A-type unit every 10 pulls ---
-            if random.random() < 0.072:
+            if random.random() < base_rate_a:
                 # Got A-unit early
                 a_units += 1
                 a_pull_counter = 0
@@ -108,8 +108,9 @@ if __name__ == "__main__":
     # User input
     simulations = int(input("Number of simulations (e.g. 99999): "))
     base_rate = float(input("Base SSR chance (e.g. 0.006 for 0.6%): "))
+    base_rate_a = float(input("Base AR chance (e.g. 0.072 for 7.2%): "))
     soft_pity_start = int(input("Soft pity starts at pull #: "))
     hard_pity = int(input("Hard pity at pull #: "))
     copies_goal = int(input("How many banner copies to simulate for (e.g. 6): "))
 
-    simulate_zzz_pulls(simulations, copies_goal, base_rate, soft_pity_start, hard_pity)
+    simulate_zzz_pulls(simulations, copies_goal, base_rate, base_rate_a, soft_pity_start, hard_pity)

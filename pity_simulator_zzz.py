@@ -81,14 +81,12 @@ def simulate_zzz_pulls(simulations, copies_goal, base_rate, base_rate_a, soft_pi
     avg_banner_a = sum(total_banner_a) / simulations
     avg_banner_b = sum(total_banner_b) / simulations
     avg_generic_a = sum(total_generic_a) / simulations
-
-    print("\n[FINAL RESULT]")
-    print(f"[ZZZ] Average Pulls: {round(avg_pulls, 2)}  |  Average Policrome: {round(avg_pulls * 160, 2)}")
-    print(f"Average A-type units: {round(avg_a, 2)}")
-    print(f"  ↳ Banner A: {round(avg_banner_a, 2)}")
-    print(f"  ↳ Banner B: {round(avg_banner_b, 2)}")
-    print(f"  ↳ Off-Banner: {round(avg_generic_a, 2)}")
-
+    
+    print(f"[ZZZ] Average Pulls: {int(round(avg_pulls))}  |  Average Policrome: {int(round(avg_pulls * 160))}")
+    print(f"Average A-type units: {int(round(avg_a))}")
+    print(f"  ↳ Banner A: {int(round(avg_banner_a))}")
+    print(f"  ↳ Banner B: {int(round(avg_banner_b))}")
+    print(f"  ↳ Off-Banner: {int(round(avg_generic_a))}")
 
 if __name__ == "__main__":
     def get_input(prompt, cast_func, default):

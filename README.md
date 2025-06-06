@@ -11,15 +11,6 @@ Made for data nerds, gacha addicts, and curious developers.
 
 ## 📂 Files
 
-### `pity_simulator_generic.py`
-
-This script simulates a classic gacha pity system:
-
-- Soft pity starts at 75 pulls.
-- Hard pity guarantees a 5★ at 90.
-- 50/50 mechanic: if a non-banner 5★ is pulled, the next one is guaranteed.
-- No specific game logic—just a generalized system.
-
 ### `pity_simulator_zzz.py`
 
 Simulates the actual behavior of **Zenless Zone Zero's** character banners:

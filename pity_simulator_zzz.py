@@ -97,8 +97,8 @@ if __name__ == "__main__":
     simulations = get_input("Number of simulations", int, 10000)
     base_rate = get_input("Base SSR rate (e.g., 0.006)", float, 0.006)
     base_rate_a = get_input("Base A-type character rate (e.g., 0.072)", float, 0.072)
-    soft_pity_start = get_input("Soft pity starts at which pull? (e.g, 75)", int, 75)
-    hard_pity = get_input("Hard pity at which pull? (e.g, 90)", int, 90)
-    copies_goal = get_input("How many banner copies? (e.g, 6)", int, 6)
+    soft_pity_start = get_input("Soft pity starts at which pull? (e.g., 75)", int, 75)
+    hard_pity = get_input("Hard pity at which pull? (e.g., 90)", int, 90)
+    copies_goal = get_input("How many banner copies? (e.g., 6)", int, 6)
 
     simulate_zzz_pulls(simulations, copies_goal, base_rate, base_rate_a, soft_pity_start, hard_pity)
